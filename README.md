@@ -5,7 +5,7 @@
 
 #### Approach 1: Brute Force
 
-> [Implementation of O(n^2) naive Solution](https://github.com/suku19/datastructure-and-algorithms/src/com/suku/array/TwoSum.java)
+> [Implementation of O(n^2) naive Solution](https://github.com/suku19/datastructure-and-algorithms/blob/master/src/com/suku/array/TwoSum.java)
 
 **Complexity Analysis** :
 
@@ -15,7 +15,7 @@ For each element, we try to find its complement by looping through the rest of a
 Space complexity : O(1).
 
 #### Approach 2: Sort the array and move the index
-> [Implementation of O(nlogn) Solution](https://github.com/suku19/datastructure-and-algorithms/src/com/suku/array/TwoSum.java)
+> [Implementation of O(nlogn) Solution](https://github.com/suku19/datastructure-and-algorithms/blob/master/src/com/suku/array/TwoSum.java)
 
 **Complexity Analysis** :
 
@@ -24,7 +24,7 @@ Time complexity : O(nlogn). Sort the array which need O(nlogn). Move the index i
 Space complexity : O(1). 
 
 #### Approach 3: Two-pass Hash Table
-> [Implementation of O(n) Solution](https://github.com/suku19/datastructure-and-algorithms/src/com/suku/array/TwoSum.java)
+> [Implementation of O(n) Solution](https://github.com/suku19/datastructure-and-algorithms/blob/master/src/com/suku/array/TwoSum.java)
 
 **Complexity Analysis** :
 
