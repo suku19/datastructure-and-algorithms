@@ -20,13 +20,14 @@ public class FindSingleNumber {
     }
 
     public static int singleNumber4(int[] nums) {
-        HashMap<Integer, Integer> hash_table = new HashMap<>();
+       Map<Integer, Integer> store = new HashMap<>();
 
-        for (int i : nums) {
-            hash_table.put(i, hash_table.getOrDefault(i, 0) + 1);
-        }
-        for (int i : nums) {
-            if (hash_table.get(i) == 1) {
+       for(int num : nums) {
+            store.put(num, store.getOrDefault(num, 0)+1);
+       }
+
+       for (int i : nums) {
+            if (store.get(i) == 1) {
                 return i;
             }
         }

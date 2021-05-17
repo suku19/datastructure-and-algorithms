@@ -1,7 +1,7 @@
 package com.suku.array;
 
 import java.util.Arrays;
-
+// https://leetcode.com/problems/plus-one/
 public class PlusOne {
     public static int[] plusOne(int[] digits) {
         int n = digits.length;
@@ -25,7 +25,11 @@ public class PlusOne {
 
     public static void main(String[] args) {
         int[] nums = {9, 9, 9};
-        Arrays.stream(plusOne(nums)).forEach(a -> System.out.println(a));
+        Arrays.stream(plusOne(nums)).forEach(a -> System.out.print(a + " "));
+
+        System.out.println();
+        int[] nums1 = {1,2,3};
+        Arrays.stream(plusOne(nums1)).forEach(a -> System.out.print(a + " "));
     }
 }
 

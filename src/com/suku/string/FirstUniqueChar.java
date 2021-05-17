@@ -1,4 +1,9 @@
 package com.suku.string;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+
 // https://leetcode.com/problems/first-unique-character-in-a-string/
 public class FirstUniqueChar {
 
@@ -24,7 +29,10 @@ public class FirstUniqueChar {
     }
 
     public static void main(String[] args) {
-        System.out.println(firstUniqChar("aabbc"));
+        System.out.println(firstUniqChar("aabbmdec"));
         ;
+        char a = 'A';
+        System.out.println((int)a);
+        System.out.println(a-'A'+1);
     }
 }

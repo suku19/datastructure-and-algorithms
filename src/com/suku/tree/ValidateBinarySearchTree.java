@@ -2,24 +2,25 @@ package com.suku.tree;
 
 import com.suku.tree.binarytree.TreeNode;
 
+//https://leetcode.com/problems/validate-binary-search-tree/
 public class ValidateBinarySearchTree {
 
 
-    public static boolean helper(TreeNode node, Integer lower, Integer upper) {
-        if (node == null) return true;
-
-        int val = node.val;
-        if (lower != null && val <= lower) return false;
-        if (upper != null && val >= upper) return false;
-
-        if (!helper(node.right, val, upper)) return false;
-        if (!helper(node.left, lower, val)) return false;
-
-        return true;
+    public static boolean validate(TreeNode root, Integer low, Integer high) {
+        // Empty trees are valid BSTs.
+        if (root == null) {
+            return true;
+        }
+        // The current node's value must be between low and high.
+        if ((low != null && root.val <= low) || (high != null && root.val >= high)) {
+            return false;
+        }
+        // The left and right subtree must also be valid.
+        return validate(root.right, root.val, high) && validate(root.left, low, root.val);
     }
 
-    public static boolean  isValidBST(TreeNode root) {
-        return helper(root, null, null);
+    public static boolean isValidBST(TreeNode root) {
+        return validate(root, null, null);
     }
 
     public static void main(String[] args) {

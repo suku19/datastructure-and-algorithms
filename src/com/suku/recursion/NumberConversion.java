@@ -5,7 +5,7 @@ package com.suku.recursion;
  */
 public class NumberConversion {
     public static void main(String[] args) {
-        int n = 5;
+        int n = 7;
         decimalToBinary(n);
     }
 

@@ -1,0 +1,31 @@
+CountDownLatche =>
+Write code to implement blocking queue in Java?
+
+Thread vs runnable
+Thread methods -> when we need what scenarios based with difference
+
+What is demon thread and user thread?
+How to stop a thread?
+
+Synchronization -> Object vs Class Synchronization
+                -> Advantages of block synchronization
+
+Concurrent API introduced in java 1.5
+Lock API
+ExecutorService -> callback vs runnable
+                -> submit vs execute
+
+What is CyclicBarrier and CountDownLatche? Why and when we need it?
+What is Fork and join framework? Why and when we need it?
+How to achieve thread safety? Synchronization/Lock API(ReadRightLock)/volatile keyword/ Atomic Classes/ Concurrent Collection
+Protecting Data with Atomic Classes?
+
+Thread problems -> Deadlock/ Livelock/ Starvation/ Race Condition/
+                -> Visibility problem and how to avoid it using volatile variable
+
+What is thread local? When and why we need it?
+
+Implement a producer consumer problem using Blocking Queue?
+
+
+

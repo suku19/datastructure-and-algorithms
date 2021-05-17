@@ -1,5 +1,8 @@
 package com.suku.array;
 
+import java.util.Arrays;
+
+// https://leetcode.com/problems/remove-duplicates-from-sorted-array/
 public class RemoveDupSortedArray {
 
     //Two pointer solution. i is slow mover and j is fast mover.
@@ -12,6 +15,9 @@ public class RemoveDupSortedArray {
                 nums[i] = nums[j];
             }
         }
+
+        Arrays.stream(nums).forEach(a -> System.out.print(a +" "));
+        System.out.println();
         return i + 1;
     }
 

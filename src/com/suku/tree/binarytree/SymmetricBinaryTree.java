@@ -1,4 +1,4 @@
-package com.suku.tree;
+package com.suku.tree.binarytree;
 
 import com.suku.tree.binarytree.TreeNode;
 

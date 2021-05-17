@@ -35,16 +35,13 @@ public class IntersectionOfTwoArray {
     //Using a hashmap
     public static int[] intersect1(int[] nums1, int[] nums2) {
 
-        if(nums1 == null || nums2 == null || nums1.length==0  || nums2.length==0)
+        if (nums1 == null || nums2 == null || nums1.length == 0 || nums2.length == 0)
             return new int[0];
 
         // step1: Put elements in nums1 into the map
-        HashMap<Integer,Integer> map = new HashMap<>();
-        for(int num:nums1)
-            if(map.containsKey(num))
-                map.put(num,map.get(num)+1);
-            else
-                map.put(num,1);
+        HashMap<Integer, Integer> map = new HashMap<>();
+        for (int num : nums1)
+                map.put(num, map.getOrDefault(num, 0)+1);
 
         // step 2: iterate the nums2 and get the result
         List<Integer> result = new ArrayList<>();
@@ -73,8 +70,8 @@ public class IntersectionOfTwoArray {
     public static void main(String[] args) {
         int[] nums1 = {2, 7, 11, 15};
         int[] nums2 = {2, 7, 12, 15};
-        System.out.println("3/2 = "+ 3/2);
-        Arrays.stream(intersect(nums1, nums2)).forEach(a -> System.out.println(a));
+        //System.out.println("3/2 = " + 3 / 2);
+        Arrays.stream(intersect1(nums1, nums2)).forEach(a -> System.out.print(a +" "));
 
     }
 }

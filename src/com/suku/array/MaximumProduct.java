@@ -1,9 +1,9 @@
 package com.suku.array;
 
 import java.util.Arrays;
-
+//https://leetcode.com/problems/maximum-product-of-three-numbers/
 public class MaximumProduct {
-    public int maximumProduct(int[] nums) {
+    public int maximumProductOfThreeNos(int[] nums) {
         //step 1 - sort the array
         Arrays.sort(nums);
 
@@ -18,7 +18,7 @@ public class MaximumProduct {
     }
 
     public static void main(String[] args) {
-        int[] nums = {1, 2, 3, 4};
-        System.out.println(new MaximumProduct().maximumProduct(nums));
+        int[] nums = {1, 2, -10, -4, 9, 10};
+        System.out.println(new MaximumProduct().maximumProductOfThreeNos(nums));
     }
 }
